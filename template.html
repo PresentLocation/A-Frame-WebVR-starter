@@ -1,21 +1,33 @@
-<!-- TEMPLATE STARTER CODE FOR A-FRAME -->
+<!--
+	
+TEMPLATE STARTER CODE FOR A-FRAME WEB VR
+https://github.com/PresentLocation/a-frame-webvr-starter
+
+ONLINE EXAMPLE
+http://www.codeyourheartout.com/examples/basicWebVR/
+
+A-FRAME DOCUMENTATION
+https://aframe.io/docs/1.0.0/introduction/
+
+PHOTOSPHERE INFORMATION FOR ASSET [photosphere.jpg] 
+View depicts garden at Natural History Museum of Los Angeles. Image by Eugene Ahn @PresentLocation using Google Street View. 
+
+-->
 
 <!DOCTYPE HTML>
 <html>
-  <head>
-		<!--<script src="https://aframe.io/releases/0.9.2/aframe.min.js"></script>-->
-	      	<script src="https://aframe.io/releases/1.0.3/aframe.min.js"></script>
-<!--
-		<script src="https://unpkg.com/aframe-environment-component/dist/aframe-environment-component.min.js"></script>-->
+	<head>
+		<script src="https://aframe.io/releases/0.9.2/aframe.min.js"></script>
+	      	<!--<script src="https://aframe.io/releases/1.0.3/aframe.min.js"></script>-->
 	</head>
 
 	<body>
 
-  <!-- BEGIN A-FRAME ELEMENT -->
+	<!-- BEGIN A-FRAME ELEMENT -->
 	<a-scene>
 		<a-assets>
-      <img id=hemisphere src=photosphere.jpg>
-    </a-assets>
+      			<img id=hemisphere src=photosphere.jpg>
+		</a-assets>
 		
 		<a-sky src="#hemisphere"></a-sky>
 	</a-scene>
